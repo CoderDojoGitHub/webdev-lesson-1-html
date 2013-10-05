@@ -157,3 +157,7 @@ Next add a title to your story. To do this add the `<title>` to the `<head>` and
 * other html elements, like `<ul>` and `<img>`
 * `<!DOCTYPE html>`
 * tease future lessons with basic stylesheet and javascript in the `<head>`
+
+## Other Resources
+
+* http://www.codecademy.com/glossary/html

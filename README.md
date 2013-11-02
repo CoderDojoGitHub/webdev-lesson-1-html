@@ -86,7 +86,9 @@ Next add the `<head>` and `<body>` tags. The `<body>` tags tell the web browser 
 </html>
 ```
 
-Now you can start telling your story by writing it out inside of the `<body>` tags! Here is an example:
+## Telling Your Story
+
+Now you can start telling your story by typing it inside of the `<body>` tags! Here is an example:
 
 ```html
 <html>
@@ -116,7 +118,9 @@ Now tell more of your story, what else happened?
 
 ![Telling more of the story](http://cl.ly/image/2w1Q090V1b2t/content#.png)
 
-Here you can see that I separated my paragraphs using new lines (on the right) but the text in the browser (on the left) didn't get separated into paragraphs. This is because I did not use HTML to add  paragraph (`<p>` tags) to my story.
+## Using Paragraphs
+
+Here you can see that I separated my paragraphs using new lines (on the right) but the rendered html (on the left) didn't get separated into paragraphs. This is because I did not use HTML to add  paragraph (`<p>` tags) to my story.
 
 Add the `<p>` around the paragraphs:
 
@@ -135,6 +139,8 @@ Add the `<p>` around the paragraphs:
 
 Now the paragraphs are displayed correctly!
 
+## Adding a Title
+
 Next add a title to your story. To do this add the `<title>` to the `<head>` and then add it to the `<body>` using `<h1>` tags.
 
 ```html
@@ -152,12 +158,178 @@ Next add a title to your story. To do this add the `<title>` to the `<head>` and
 
 ![Story with title](http://cl.ly/image/1e352r043A1x/content#.png)
 
-## TODO
+## Picture Time!
 
-* other html elements, like `<ul>` and `<img>`
-* `<!DOCTYPE html>`
-* tease future lessons with basic stylesheet and javascript in the `<head>`
+This story would be a lot more interesting with pictures! Adding a picture to our story is simple, we just use the `<img>` tag and tell it where our image is.
+
+The `<img>` tag has an attribute called `src` and this is where we tell it the url to the image we want to use in our story. Here is an example `<img>` tag:
+
+```html
+<img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg" />
+```
+
+Adding this to our story is easy:
+
+```html
+<html>
+	<head>
+		<title>A day at the dog park</title>
+	</head>
+	<body>
+		<h1>A day at the dog park</h1>
+		<p>Today I took the dogs to the park and we had a great time!</p>
+		<img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg" />
+		<p>After the dogs played with their friends we took a walk around the track together.</p>
+		<img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg" />
+	</body>
+</html>
+```
+
+
+![Story with images](http://cl.ly/image/3w2d1C0P1N3I/content#.png)
+
+## What Else Can I Do?
+
+### Lists
+
+You can easily add a list to your story using `<ul>` and `<li>` tags. Here is an example:
+
+```html
+<html>
+	<head>
+		<title>A day at the dog park</title>
+	</head>
+	<body>
+		<h1>A day at the dog park</h1>
+		<p>Today I took the dogs to the park and we had a great time!</p>
+		<img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg" />
+		<p>After the dogs played with their friends we took a walk around the track together.</p>
+		<img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg" />
+		<p>While we were at the dog park we saw many kinds of dogs, including:</p>
+		<ul>
+			<li>Poodles</li>
+			<li>Great Danes</li>
+			<li>Black Labs</li>
+		</li>
+	</body>
+</html>
+```
+
+The `<ul>` tag tells the browser this is a list of items. The `<li>` tags are used around each list item.
+
+![Story with list of dogs](http://cl.ly/image/3E2k0C3k3u3N/content#.png)
+
+If you want the list to use numbers instead of bullet points you can change the `<ul>` tag (unordered list) to an `<ol>` tag (ordered list).
+
+```html
+<html>
+	<head>
+		<title>A day at the dog park</title>
+	</head>
+	<body>
+		<h1>A day at the dog park</h1>
+		<p>Today I took the dogs to the park and we had a great time!</p>
+		<img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg" />
+		<p>After the dogs played with their friends we took a walk around the track together.</p>
+		<img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg" />
+		<p>While we were at the dog park we saw many kinds of dogs, including:</p>
+		<ol>
+			<li>Poodles</li>
+			<li>Great Danes</li>
+			<li>Black Labs</li>
+		</ol>
+	</body>
+</html>
+```
+
+![Story with ordered list](http://cl.ly/image/3x2t1c1N1v3o/content#.png)
+
+### Hyperlinks
+
+One of the things that makes web pages so amazing for telling stories is you can **link** things together with other web pages on the internet and it is really easy to do!
+
+In the pervious example I included three kinds of dogs that we saw at the park, now I'm going to use hyperlinks (the `<a>` tag) to link the dog names to their descriptions on Wikipedia.
+
+The `<a>` tag has an attribute called `href` and we will set that attribute equal to the url of the web page we want to link to. Here is an example where I link the word Poodles to the web page about Poodles on Wikipedia:
+
+```
+<a href="http://en.wikipedia.org/wiki/Poodle">Poodles</a>
+```
+
+Here is what it looks like in the context of our story:
+
+```html
+<html>
+	<head>
+		<title>A day at the dog park</title>
+	</head>
+	<body>
+		<h1>A day at the dog park</h1>
+		<p>Today I took the dogs to the park and we had a great time!</p>
+		<img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg" />
+		<p>After the dogs played with their friends we took a walk around the track together.</p>
+		<img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg" />
+		<p>While we were at the dog park we saw many kinds of dogs, including:</p>
+		<ul>
+			<li><a href="http://en.wikipedia.org/wiki/Poodle">Poodles</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Great_Dane">Great Danes</a></li>
+			<li><a href="http://en.wikipedia.org/wiki/Labrador_Retriever">Black Labs</a></li>
+		</li>
+	</body>
+</html>
+```
+
+### HTML Doctype
+
+Web browsers look for a document type tag at the beginning of an HTML document in order to determine how they should read and render the HTML. We can add the `<!DOCTYPE html>` tag to our web page to tell browsers that we are using the latest version of HTML.
+
+```html
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>A day at the dog park</title>
+	</head>
+	<body>
+		<h1>A day at the dog park</h1>
+		<p>Today I took the dogs to the park and we had a great time!</p>
+		<img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg" />
+		<p>After the dogs played with their friends we took a walk around the track together.</p>
+		<img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg" />
+		<p>While we were at the dog park we saw many kinds of dogs, including:</p>
+		<ul>
+			<li>Poodles</li>
+			<li>Great Danes</li>
+			<li>Black Labs</li>
+		</ul>
+	</body>
+</html>
+```
+
+You can read more about document type [here](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Introduction_to_HTML5).
+
+## Style
+
+In the next lesson we will start learning how to add style to our story using html attributes and css. Here is an example to help get you excited about the next lesson.
+
+In Codepen we want to check the box next to CSS and then paste the following css code into the CSS box:
+
+```css
+body {
+  font-family: Arial;
+  background-color: #eee;
+  color: green;
+}
+
+img {
+  border: 2px solid green;
+  padding: 2px;
+}
+```
+
+![Story with CSS](http://cl.ly/image/002B0l3l090P/content#.png)
+
 
 ## Other Resources
 
-* http://www.codecademy.com/glossary/html
+* [HTML Glossary](http://www.codecademy.com/glossary/html)
+* [Mozilla Developer Network](https://developer.mozilla.org/en-US/)

@@ -58,11 +58,11 @@ Check out the [live demo](http://codepen.io/anon/pen/vmibf) to experiment yourse
 
 To get started you should open a blank project on CODEPEN: [http://codepen.io/pen/](http://codepen.io/pen/)
 
-![CODEPEN empty project](http://cl.ly/image/061a2T1r0K1a/content#.png)
+![CODEPEN empty project](http://cl.ly/image/35081n120I42/content#.png)
 
 For now ignore the JS and CSS areas so uncheck the boxes next to them.
 
-![Uncheck JS and CSS](http://cl.ly/image/1g0G050U1g1S/content#.png)
+![Uncheck JS and CSS](http://cl.ly/image/1f3C0E1O1t2Q/content#.png)
 
 Now add the minimal amount of HTML to make the page work. Start by clicking in the HTML area and adding opening and closing `<html>` tags.
 
@@ -73,7 +73,7 @@ Now add the minimal amount of HTML to make the page work. Start by clicking in t
 
 Your screen should look like this now:
 
-![CODEPEN after adding html tags](http://cl.ly/image/1i2I2F0K0W3u/content#.png)
+![CODEPEN after adding html tags](http://cl.ly/image/1y1H1M1n2r1m/content#.png)
 
 Next add the `<head>` and `<body>` tags. The `<body>` tags tell the web browser that this part of the page should be rendered (displayed). Now our HTML should look like this:
 
@@ -98,7 +98,7 @@ Now you can start telling your story by writing it out inside of the `<body>` ta
 </html>
 ```
 
-![Basic demo of HTML in action](http://cl.ly/image/1J1e341a3830/content#.png)
+![Basic demo of HTML in action](http://cl.ly/image/2P3l3V1A302i/content#.png)
 
 Now tell more of your story, what else happened?
 
@@ -114,7 +114,7 @@ Now tell more of your story, what else happened?
 </html>
 ```
 
-![Telling more of the story](http://cl.ly/image/1S1h0u0D003C/content#.png)
+![Telling more of the story](http://cl.ly/image/2w1Q090V1b2t/content#.png)
 
 Here you can see that I separated my paragraphs using new lines (on the right) but the text in the browser (on the left) didn't get separated into paragraphs. This is because I did not use HTML to add  paragraph (`<p>` tags) to my story.
 
@@ -131,7 +131,7 @@ Add the `<p>` around the paragraphs:
 </html>
 ```
 
-![Adding paragraph tags](http://cl.ly/image/0K460a2b2K3V/content#.png)
+![Adding paragraph tags](http://cl.ly/image/1U053V060k0u/content#.png)
 
 Now the paragraphs are displayed correctly!
 
@@ -150,7 +150,7 @@ Next add a title to your story. To do this add the `<title>` to the `<head>` and
 </html>
 ```
 
-![Story with title](http://cl.ly/image/1q0x0a1m3C1G/content#.png)
+![Story with title](http://cl.ly/image/1e352r043A1x/content#.png)
 
 ## TODO
 

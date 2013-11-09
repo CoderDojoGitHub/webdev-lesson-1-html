@@ -165,7 +165,7 @@ This story would be a lot more interesting with pictures! Adding a picture to ou
 The `<img>` tag has an attribute called `src` and this is where we tell it the url to the image we want to use in our story. Here is an example `<img>` tag:
 
 ```html
-<img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg" />
+<img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg">
 ```
 
 Adding this to our story is easy:
@@ -178,9 +178,9 @@ Adding this to our story is easy:
 	<body>
 		<h1>A day at the dog park</h1>
 		<p>Today I took the dogs to the park and we had a great time!</p>
-		<img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg" />
+		<img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg">
 		<p>After the dogs played with their friends we took a walk around the track together.</p>
-		<img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg" />
+		<img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg">
 	</body>
 </html>
 ```
@@ -188,9 +188,47 @@ Adding this to our story is easy:
 
 ![Story with images](http://cl.ly/image/3w2d1C0P1N3I/content#.png)
 
-## What Else Can I Do?
+## Strong and Emphasis
 
-### Lists
+Sometimes we want to bring more attention to parts of our story. One way we can do this is by using the `<strong>` tag to make certain parts of our story look bolder compared to other parts. Here is an example:
+
+```html
+<html>
+  <head>
+    <title>A day at the dog park</title>
+  </head>
+  <body>
+    <h1>A day at the dog park</h1>
+    <p>Today I took the dogs to the park and <strong>we had a great time!</strong></p>
+    <img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg">
+    <p>After the dogs played with their friends we took a walk around the track together.</p>
+    <img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg">
+  </body>
+</html>
+```
+
+![Story with strong](http://cl.ly/image/1u083V0I0Y3O/content#.png)
+
+We can bring emphasis to parts of our story by *making them italic*. We use the `<em>` tag for emphasis. Here is an example:
+
+```html
+<html>
+  <head>
+    <title>A day at the dog park</title>
+  </head>
+  <body>
+    <h1>A day at the dog park</h1>
+    <p>Today I took the dogs to the park and <strong>we had a great time!</strong></p>
+    <img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg">
+    <p>After the dogs played with their friends <em>we took a walk around the track together.</em></p>
+    <img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg">
+  </body>
+</html>
+```
+
+![Story with emphasis](http://cl.ly/image/45033t3W3v3R/content#.png)
+
+## Lists
 
 You can easily add a list to your story using `<ul>` and `<li>` tags. Here is an example:
 
@@ -201,10 +239,10 @@ You can easily add a list to your story using `<ul>` and `<li>` tags. Here is an
 	</head>
 	<body>
 		<h1>A day at the dog park</h1>
-		<p>Today I took the dogs to the park and we had a great time!</p>
-		<img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg" />
-		<p>After the dogs played with their friends we took a walk around the track together.</p>
-		<img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg" />
+		<p>Today I took the dogs to the park and <strong>we had a great time!</strong></p>
+    <img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg">
+    <p>After the dogs played with their friends <em>we took a walk around the track together.</em></p>
+    <img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg">
 		<p>While we were at the dog park we saw many kinds of dogs, including:</p>
 		<ul>
 			<li>Poodles</li>
@@ -228,10 +266,10 @@ If you want the list to use numbers instead of bullet points you can change the 
 	</head>
 	<body>
 		<h1>A day at the dog park</h1>
-		<p>Today I took the dogs to the park and we had a great time!</p>
-		<img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg" />
-		<p>After the dogs played with their friends we took a walk around the track together.</p>
-		<img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg" />
+		<p>Today I took the dogs to the park and <strong>we had a great time!</strong></p>
+    <img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg">
+    <p>After the dogs played with their friends <em>we took a walk around the track together.</em></p>
+    <img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg">
 		<p>While we were at the dog park we saw many kinds of dogs, including:</p>
 		<ol>
 			<li>Poodles</li>
@@ -244,7 +282,7 @@ If you want the list to use numbers instead of bullet points you can change the 
 
 ![Story with ordered list](http://cl.ly/image/3x2t1c1N1v3o/content#.png)
 
-### Hyperlinks
+## Hyperlinks
 
 One of the things that makes web pages so amazing for telling stories is you can **link** things together with other web pages on the internet and it is really easy to do!
 
@@ -265,10 +303,10 @@ Here is what it looks like in the context of our story:
 	</head>
 	<body>
 		<h1>A day at the dog park</h1>
-		<p>Today I took the dogs to the park and we had a great time!</p>
-		<img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg" />
-		<p>After the dogs played with their friends we took a walk around the track together.</p>
-		<img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg" />
+		<p>Today I took the dogs to the park and <strong>we had a great time!</strong></p>
+    <img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg">
+    <p>After the dogs played with their friends <em>we took a walk around the track together.</em></p>
+    <img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg">
 		<p>While we were at the dog park we saw many kinds of dogs, including:</p>
 		<ul>
 			<li><a href="http://en.wikipedia.org/wiki/Poodle">Poodles</a></li>
@@ -279,33 +317,41 @@ Here is what it looks like in the context of our story:
 </html>
 ```
 
-### HTML Doctype
+## Telling More Than One Story
 
-Web browsers look for a document type tag at the beginning of an HTML document in order to determine how they should read and render the HTML. We can add the `<!DOCTYPE html>` tag to our web page to tell browsers that we are using the latest version of HTML.
+If you want to write another story you don't have to start a whole new web page, you can use the same page you have been working on and use HTML to indicate where one story stops and the next begins. Typically we will use `<article>` tags to accomplish this. Here is an example:
 
 ```html
-<!DOCTYPE html>
 <html>
-	<head>
-		<title>A day at the dog park</title>
-	</head>
-	<body>
-		<h1>A day at the dog park</h1>
-		<p>Today I took the dogs to the park and we had a great time!</p>
-		<img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg" />
-		<p>After the dogs played with their friends we took a walk around the track together.</p>
-		<img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg" />
-		<p>While we were at the dog park we saw many kinds of dogs, including:</p>
-		<ul>
-			<li>Poodles</li>
-			<li>Great Danes</li>
-			<li>Black Labs</li>
-		</ul>
-	</body>
+  <head>
+    <title>A day at the dog park</title>
+  </head>
+  <body>
+    <h1>Dog Stories</h1>
+    <article>
+      <h2>A day at the dog park</h2>
+      <p>Today I took the dogs to the park and <strong>we had a great time!</strong></p>
+      <img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg">
+      <p>After the dogs played with their friends <em>we took a walk around the track together.</em></p>
+      <img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg">
+      <p>While we were at the dog park we saw many kinds of dogs, including:</p>
+      <ul>
+        <li><a href="http://en.wikipedia.org/wiki/Poodle">Poodles</a></li>
+        <li><a href="http://en.wikipedia.org/wiki/Great_Dane">Great Danes</a></li>
+        <li><a href="http://en.wikipedia.org/wiki/Labrador_Retriever">Black Labs</a></li>
+      </li>
+    </article>
+    <article>
+      <h2>Driving Across The Country With Leo and Bailey</h2>
+      <p>A year ago we drove across the country <em>with Leo and Bailey</em> when we moved from Indiana to California.</p>
+      <img src="http://cl.ly/image/3G2Z3x0G3Z46/content#.png">
+      <p>One time after stopping to eat lunch we found Leo in the front seat ready to drive. <strong>This made us laugh really hard :)</strong></p>
+    </article>
+  </body>
 </html>
 ```
 
-You can read more about document type [here](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Introduction_to_HTML5).
+You will notice a few new things in the html above. We added a second story, we enclosed both stories in `<article>` tags, we changed the story titles to use `<h2>` (Heading 2) tags, and we changed the `<h1>` (Heading 1) at the top to say **Dog Stories**.
 
 ## Style
 
@@ -328,6 +374,34 @@ img {
 
 ![Story with CSS](http://cl.ly/image/002B0l3l090P/content#.png)
 
+## Advanced Topics
+
+### HTML Doctype
+
+Web browsers look for a document type tag at the beginning of an HTML document in order to determine how they should read and render the HTML. We can add the `<!DOCTYPE html>` tag to our web page to tell browsers that we are using the latest version of HTML.
+
+```html
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>A day at the dog park</title>
+  </head>
+  <body>
+    <h1>A day at the dog park</h1>
+    <p>Today I took the dogs to the park and <strong>we had a great time!</strong></p>
+    <img src="http://f.cl.ly/items/2f473l1d233S0S1k3J3d/dogs-playing.jpg">
+    <p>After the dogs played with their friends <em>we took a walk around the track together.</em></p>
+    <img src="http://f.cl.ly/items/0o0T0V0g261C1R0I022z/walking-the-track.jpg">
+    <p>While we were at the dog park we saw many kinds of dogs, including:</p>
+    <ul>
+      <li>Poodles</li>
+      <li>Great Danes</li>
+      <li>Black Labs</li>
+    </ul>
+  </body>
+</html>
+```
+You can read more about document type [here](https://developer.mozilla.org/en-US/docs/Web/Guide/HTML/HTML5/Introduction_to_HTML5).
 
 ## Other Resources
 
